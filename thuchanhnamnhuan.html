@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuc Hanh Nam Nhuan</title>
+</head>
+<body>
+<script>
+    let nam=+prompt("nhap mot nam bat ky:");
+    let chiahet4=nam%4==0;
+    let chiahet100=(nam%100==0);
+    let chiahet400=(nam%400==0);
+    let conhuankhong = false
+    if (chiahet4) {
+        if (chiahet100){
+            if (chiahet400){
+                conhuankhong = true
+            }
+        }else {
+            conhuankhong = true
+        }
+    }
+    if (conhuankhong) {
+        alert(nam+"  la nam nhuan")
+    } else {
+        alert(nam+"  khong phai nam nhuan")
+    }
+</script>
+</body>
+</html>
