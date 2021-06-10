@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen tap cau tru if else</title>
+</head>
+<body>
+<p>Nhap vao ten lop cua ban:</p>
+<input type="text" id ="tenlop">
+<button type="button" onclick="chonlopcuaban()">Xac Nhan</button>gi
+<script>
+    function chonlopcuaban() {
+        let tenlop = document.getElementById("tenlop").value;
+        let sosanh = (tenlop == "C05")
+        if (sosanh) {
+            document.write("Xin chuc mung ban da chon dung lop");
+        } else {
+            document.write("Moi ban di ve")
+        }
+    }
+</script>
+</body>
+</html>
