@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen tap if else if</title>
+</head>
+<body>
+<script>
+    let name = prompt("nhap ten dang nhap");
+    if (name=="Admin"){
+        let matkhau = prompt("nhap mat khau");
+        if (matkhau=="Themaster") {
+            document.write("Xin Chao");
+        } else if (matkhau=="null"){
+            document.write("Canceld");
+        } else {
+            document.write("Wrong password");
+        }
+    } else if (name=="null"){
+        document.write("Canceld");
+    } else {
+        document.write("I dont know");
+    }
+</script>
+</body>
+</html>
